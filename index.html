@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <link rel="stylesheet"href="styll.css">
+    <script src="https://kit.fontawesome.com/e69986f474.js" crossorigin="anonymous"></script>
+</head>
+<!-- ............main stuf............... -->
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images1/logo4.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a>
+                    <li><a href="#about" onclick="closemenu()">About</a>
+                    <li><a href="#services" onclick="closemenu()">Projects</a>
+                    <li><a href="#life" onclick="closemenu()">Life</a>
+                    <li><a href="#contact" onclick="closemenu()">Conatcts </a>
+                    <i class="fas fa-times"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Budding Investor/Entrepreneur</p>
+                <h1>Hi,I'm <br>  <span>Dibyendu</span> Mondal<br> from India</h1>
+            </div>
+        </div>
+    </div>
+<!----------------------------------about--------->
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images1/user1.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitile">About Me</h1>
+                        <p1 id="intro" >I am an Electronics and Communication engineering student with
+                            a focus on being a full time investor and entrepreneur.If I have to
+                            describe myself with three fitting attributes then diligent,
+                            efficient and hardworking will be best suited.I was very fascinated by the process, how wealth
+                            centralizes only to small fraction of a population, later on
+                            researching and going through few books I came to realize that
+                            making money is nothing but an art and on further research I
+                            stumbled upon derivative and commodity markets. From then on
+                            I started to grow interest on that particular field mesmerized,
+                            where money makes money. So in order to stack up more
+                            knowledge on the given field I am looking forward to work in the
+                            best place I could ever find.</p1>
+                            <div class="tab-titles">
+                                <p class="tab-links xyz" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links"onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tabcontent activetab" id="skills">
+                                <ul>
+                                    <li><span>STOCK MARKET TRADER<br></span>Equity/Commodity/Derivatives</li>
+                                    <li><span>Web Development<br></span>Web Development</li>
+                                   <!-- <li><span>App Development<br></span>Building Android/ios apps</li>-->
+                                </ul>
+                            </div>
+                            <div class="tabcontent" id="experience">
+                                <ul>
+                                    <li><span>Marketing Intern<br></span>01/08/2022-01/09/2022:Marketverse,NSE</li>
+                                    <li><span>Trader<br></span>01/05/2022-current:Equity and Derivatives trading</li>
+                                   <!--- <li><span>App Development<br></span>Building Android/ios apps</li>-->
+                                </ul>
+                            </div>
+                            <div class="tabcontent" id="education">
+                                <ul>
+                                    <li><span>Bachelors in Technology<br></span>Electronics and Communication engineering, <br> National Institue of Technology,Durgapur </li>
+                                    <li><span>Finance and Stock Market<br></span>Goela School Of Finance</li>
+                                    
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!----------------------services------------>
+<div id="services">
+        <div class="container">
+            <h1 class="subtitile">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                       it to make a type specimen book. I</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h2>Stock Market Trading</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                       it to make a type specimen book. I</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>App/Game Design Design</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                       it to make a type specimen book. I</p>
+                       <a href="#">Learn more</a>
+
+
+                </div>
+            </div>
+        </div>
+</div>
+<!-- Portfolio -->
+<div id="life">
+    <div class="container">
+        <h1 class="subtitile">My Life</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images1/DSC_0246.png">
+                <div class="layer">
+                    <h3>Wander-Lust</h3>
+                    <p>  “Jobs fill your pockets, adventures fill your soul.”
+                    </p>
+                    <a href="#"><i class="fa-solid fa-image"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images1/1.png">
+                <div class="layer">
+                    <h3>Culture Consumer</h3>
+                    <p>Apart from photography and travelling I love to consume
+                        all sort of socio-cultural events all across the the world. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images1/books.png">
+                <div class="layer">
+                    <h3>Bibliophile</h3>
+                    <p>“You're the only person I've ever met who can stand a bookstore as long as I can.”
+                       <br> <span> -Junot Díaz, This Is How You Lose Her</span> 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-book-open"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="btn">
+            <a href="#">See more</a>
+        </div> -->
+    </div>
+</div>
+<!-- ----------------contact------------------- -->
+<div id="contact">
+    <div class="conatiner">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitile"> Let's chat</h1>
+                <p><i class="fa-regular fa-envelope"></i> mondaldibyendu17072002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (+91)7044210578</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn2">
+                    <a href="images1/resume.pdf" download>Download CV<i class="fa-regular fa-circle-down"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="absd@gmail.com" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-heart"></i>Made with Vs Code</p>
+    </div>
+</div>
+<!-- -----------------------dark/light------------------- -->
+<div id="light">
+    <div class="lightmode">
+        <i class="fa-solid fa-sun" onclick="lightmode()"></i>
+    </div>
+</div>
+<!-- -----------------------dark/light------------------- -->
+
+
+
+   <!-----------------------click--------------------->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tabcontent")
+        //defining opentab function
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("xyz");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        //displaying the xyz color
+        event.currentTarget.classList.add("xyz");
+        //displaying content
+        document.getElementById(tabname).classList.add("activetab");
+    }
+    </script>
+
+    <!-- / --------click menu-------- -->
+    <script>
+        var side=document.getElementById("sidemenu");
+        function openmenu(){
+            side.style.right="0";
+        }
+        function closemenu(){
+            side.style.right="-300px";
+        }
+    </script>
+    <!-- // --------click menu-------- -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYVD2c0UhAIbRtwy69pV8FK_f9Nv7N2gfTRGc7TNbgJd8dJuRYo0xBxX3Gu4xINzib/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Thank's for stopping by✅"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
