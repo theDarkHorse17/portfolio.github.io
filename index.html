@@ -13,7 +13,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images1/logo4.png" class="logo">
+                <img src="images1/logo4.png" class="logo" id="log">
                 <ul id="sidemenu">
                     <li><a href="#header" onclick="closemenu()">Home</a>
                     <li><a href="#about" onclick="closemenu()">About</a>
@@ -23,6 +23,7 @@
                     <i class="fas fa-times"  onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
+                <img src="images1/sun.png" id="icon">
             </nav>
             <div class="header-text">
                 <p>Budding Investor/Entrepreneur</p>
@@ -93,22 +94,25 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                       it to make a type specimen book. I</p>
+                    <p>Although I recently started my journey as a website developer,I have couple of projects in my arsenal that I can brag
+                        about.Even this portfolio websiste is also something that I am really proud of. <br>The attached link will take you to the arsenal of my websites .....</p>
                        <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-arrow-trend-up"></i>
                     <h2>Stock Market Trading</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                       it to make a type specimen book. I</p>
+                    <p>Apart from all this technical knowledge.I really am a big fan off financial freedom. In pursuit of financial freedom and knowledge I came
+                        across Investements and accounting.This part is completely dettached from the course I am currently pursuing.If I have to categorize this
+                        part of lfe then a side hustke might me appropriate one.
+                        
+                        As far as I can remember I am actively trading and investing ever since my third semester.</p>
                        <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-gamepad"></i>
                     <h2>App/Game Design Design</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                       it to make a type specimen book. I</p>
+                    <p>Just like Web-D I took game designing just out of a curiosity and grew a knack in it.The game are basic visual novel type. I made from my
+                        college dorm room with few of my friends. <br> Hope you like it.</p>
                        <a href="#">Learn more</a>
 
 
@@ -151,9 +155,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="btn">
-            <a href="#">See more</a>
-        </div> -->
     </div>
 </div>
 <!-- ----------------contact------------------- -->
@@ -165,8 +166,8 @@
                 <p><i class="fa-regular fa-envelope"></i> mondaldibyendu17072002@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i> (+91)7044210578</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dibyendu-mondal-4a7230257/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/theDarkHorse17"><i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <div class="btn2">
@@ -176,8 +177,8 @@
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="absd@gmail.com" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="email" name="email" placeholder="abcd@gmail.com" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" id="mess"></textarea>
                     <button type="Submit" class="btn3">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -185,18 +186,24 @@
         </div>
     </div>
     <div class="copyright">
-        <p><i class="fa-solid fa-heart"></i>Made with Vs Code</p>
+        <p><i class="fa-solid fa-heart"></i>Made with love</p>
     </div>
 </div>
 <!-- -----------------------dark/light------------------- -->
-<div id="light">
-    <div class="lightmode">
-        <i class="fa-solid fa-sun" onclick="lightmode()"></i>
-    </div>
-</div>
+<script>
+    var icon=document.getElementById("icon");
+    icon.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="images1/moon.png";
+            log.src="images1/logo41.png";
+        }else{
+            icon.src="images1/sun.png";
+            log.src="images1/logo4.png";
+        }
+    }
+</script>
 <!-- -----------------------dark/light------------------- -->
-
-
 
    <!-----------------------click--------------------->
     <script>
