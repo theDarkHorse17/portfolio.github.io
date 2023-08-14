@@ -226,6 +226,9 @@ nav ul li a:hover::after{
 .layer p {
     font-size: 18px;
 }
+#s{
+    display: none;
+}
 .work div p span{
     font-size: 12px;
 }
@@ -331,7 +334,7 @@ nav .fas{
     display: none;
 }
 /* ---------------------for small screen------------ */
-@media(max-width:600px){
+@media(max-width:1200px){
     html,
     .body{
         width: 100%;
@@ -346,6 +349,9 @@ nav .fas{
     }
     .header-text{
         font-size:14px;
+    }
+    #s{
+        display: block;
     }
     .header-text h1 span{
         color: rgb(149, 11, 11); 
@@ -402,6 +408,7 @@ nav .fas{
     #contact{
         margin-bottom: auto;
     }
+
 }
 /* ----------------------------------------------------------- */
 form input,form textarea{
